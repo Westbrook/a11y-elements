@@ -21,9 +21,12 @@ My approach is going to look like this:
 3. Implement this smarter, more flexible version.
 4. Ship it to NPM with all the best suggestions for doing so, a la: https://justinfagnani.com/2019/11/01/how-to-publish-web-components-to-npm
 
-Along the way, I might look into moving this repo towards Lerna and implementing some of the reccomendations from open-wc.org, but for now, I'm just getting started. If you come along for the ride, please feel free to submit issues or PRs to get in on that action. For now, the things I'm looking at are as follows:
+Along the way, I might look into moving this repo towards Lerna and implementing some of the reccomendations from open-wc.org, but for now, I'm just getting started. If you come along for the ride, please feel free to submit issues or PRs to get in on that action. For now, the things I'm looking are listed below.
 
-| a11y-element  | Initial port | Technical proposal | Final implementation |
+## Status
+
+| a11y-element  | w3c spec | Initial port | Technical proposal | Final implementation |
 | ------------- | ------------- | ------------- | ------------- |
-| a11y-accordion  | In progress  | TK  | TK |
-| what's next?  |  |  |  |
+| a11y-accordion  | [spec](https://www.w3.org/TR/wai-aria-practices/#accordion) [example](https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html) | [In progress](https://github.com/Westbrook/a11y-elements/pull/1)  | TK  | TK |
+| a11y-alert  | [spec](https://www.w3.org/TR/wai-aria-practices/#alert) [example](https://www.w3.org/TR/wai-aria-practices/examples/alert/alert.html)  | [In progress](https://github.com/Westbrook/a11y-elements/pull/3)  | TK  | TK |
+| what's next?  |  |  |  |  |
