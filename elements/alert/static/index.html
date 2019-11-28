@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <script src="/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+  <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <title>LitElement Example</title>
+</head>
+  <body>
+    <p>This is text that the reader has to read first in order to be "alerted" that new content is available.</p>
+    <button>Alert</button>
+    <a11y-alert></a11y-alert>
+    <script type="module">
+      import './index.js';
+      document.querySelector('button').addEventListener('click', () => {
+        document.querySelector('a11y-alert').innerHTML = '<span lang="da">Hej</span>, hello, <span lang="it">ciao</span>, <span lang="ja">こんにちは</span>, <span lang="ko">안녕</span>'
+      })
+    </script>
+  </body>
+</html>
