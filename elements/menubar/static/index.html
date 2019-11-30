@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <script src="/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+  <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <title>a11y-menubar Example</title>
+</head>
+  <body>
+    <nav aria-label="Mythical University">
+      <a11y-menubar aria-label="Mythical University">
+        <a11y-menuitem direction="down">
+          <a href="#">About</a>
+          <a11y-menu slot="children">
+            <a11y-menuitem>
+              <a href="#overview">Overview</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="#administration">Administration</a>
+            </a11y-menuitem>
+            <a11y-menuitem direction="right">
+              <a href="#overview">Facts</a>
+              <a11y-menu slot="children">
+                <a11y-menuitem>
+                  <a href="#overview">History</a>
+                </a11y-menuitem>
+                <a11y-menuitem>
+                  <a href="#overview">Current Statistics</a>
+                </a11y-menuitem>
+                <a11y-menuitem>
+                  <a href="#overview">Awards</a>
+                </a11y-menuitem>
+              </a11y-menu>
+            </a11y-menuitem>
+            <a11y-menuitem direction="right">
+              <a href="#overview">Campus Tours</a>
+              <a11y-menu slot="children">
+                <a11y-menuitem>
+                  <a href="#overview">For perspective students</a>
+                </a11y-menuitem>
+                <a11y-menuitem>
+                  <a href="#overview">For alumni</a>
+                </a11y-menuitem>
+                <a11y-menuitem>
+                  <a href="#overview">For visitors</a>
+                </a11y-menuitem>
+              </a11y-menu>
+            </a11y-menuitem>
+          </a11y-menu>
+        </a11y-menuitem>
+        <a11y-menuitem direction="down">
+          <a href="#">Admissions</a>
+          <a11y-menu slot="children" aria-label="Admissions">
+            <a11y-menuitem>
+              <a href="mb-admissions.html#apply">Apply</a>
+            </a11y-menuitem>
+            <a11y-menuitem direction="right">
+              <a href="#">Tuition</a>
+              <a11y-menu slot="children" aria-label="Tuition Information">
+                <a11y-menuitem>
+                  <a href="mb-admissions.html#tuition">Undergraduate</a>
+                </a11y-menuitem>
+                <a11y-menuitem>
+                  <a href="mb-admissions.html#tuition">Graduate</a>
+                </a11y-menuitem>
+                <a11y-menuitem>
+                  <a href="mb-admissions.html#tuition">Professional Schools</a>
+                </a11y-menuitem>
+              </a11y-menu>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-admissions.html#signup">Sign Up</a>
+            </a11y-menuitem>
+            <div role="separator"></div>
+            <a11y-menuitem>
+              <a href="mb-admissions.html#visit">Visit</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-admissions.html#photo">to Tour</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-admissions.html#connect">Connect</a>
+            </a11y-menuitem>
+          </a11y-menu>
+        </a11y-menuitem>
+        <a11y-menuitem direction="down">
+          <a href="#">Academics</a>
+          <a11y-menu slot="children" aria-label="Academics">
+            <a11y-menuitem>
+              <a href="mb-academics.html#colleges">Colleges & Schools</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-academics.html#programs">Programs of Study</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-academics.html#honors">Honors Programs</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-academics.html#online">Online Courses</a>
+            </a11y-menuitem>
+            <div role="separator"></div>
+            <a11y-menuitem>
+              <a href="mb-academics.html#explorer">Course Explorer</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-academics.html#register">Register for Class</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-academics.html#academic">Academic Calendar</a>
+            </a11y-menuitem>
+            <a11y-menuitem>
+              <a href="mb-academics.html#tanscripts">Transcripts</a>
+            </a11y-menuitem>
+          </a11y-menu>
+        </a11y-menuitem>
+      </a11y-menubar>
+    </nav>
+    <script type="module" src="./menubar.js"></script>
+    <script type="module" src="./menu.js"></script>
+    <script type="module" src="./menuitem.js"></script>
+  </body>
+</html>
